@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { FiSettings } from 'react-icons/fi';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navber from './components/Navber';
 import Sideber from './components/Sideber';
 import { useStateContext } from "./context/ContextProvider";
+import Ecommerce from './pages/Ecommerce';
 
 
 const App = () => {
@@ -56,6 +57,10 @@ const App = () => {
               <Navber />
             </div>
             <div>
+              <Routes>
+                <Route path='/' element={(<Ecommerce />)} />
+
+              </Routes>
             
 
             

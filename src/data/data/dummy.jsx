@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineAreaChart, AiOutlineBarChart, AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineStock } from 'react-icons/ai';
+import { AiOutlineAreaChart, AiOutlineBarChart, AiOutlineCalendar, AiOutlinePlus, AiOutlineShoppingCart, AiOutlineStock } from 'react-icons/ai';
 import { BiColorFill } from 'react-icons/bi';
 import { BsBarChart, BsBoxSeam, BsChatLeft, BsCurrencyDollar, BsKanban, BsShield } from 'react-icons/bs';
 import { FiBarChart, FiCreditCard, FiEdit, FiPieChart, FiShoppingBag, FiShoppingCart, FiStar } from 'react-icons/fi';
@@ -487,6 +487,10 @@ export const links = [
         icon: <AiOutlineShoppingCart />,
       },
       {
+        name: 'create',
+        icon: <AiOutlinePlus />,
+      },
+      {
         name: 'employees',
         icon: <IoMdContacts />,
       },
@@ -621,6 +625,8 @@ export const earningData = [
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
+    // bgColor: 'bg-amber-200'
+    
   },
   {
     icon: <BsBoxSeam />,
@@ -630,6 +636,7 @@ export const earningData = [
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
     pcColor: 'green-600',
+    // bgColor: 'bg-lime-300'
   },
   {
     icon: <FiBarChart />,
@@ -640,6 +647,7 @@ export const earningData = [
     iconBg: 'rgb(255, 244, 229)',
 
     pcColor: 'green-600',
+    // bgColor: 'bg-amber-200'
   },
   {
     icon: <HiOutlineRefresh />,
@@ -649,6 +657,7 @@ export const earningData = [
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
+    // bgColor: 'bg-stone-600'
   },
 ];
 
