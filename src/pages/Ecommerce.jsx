@@ -6,6 +6,16 @@ const Ecommerce = () => {
     <div className='mt-12'>
    
         <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       
     </div>
   

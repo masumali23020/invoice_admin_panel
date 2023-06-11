@@ -1,10 +1,3 @@
-setTimeout(()=> console.log(1),0)
-Promise.resolve(2).then(console.log(22))
-console.log('fdsf')
-
-// Both setTimeout and Promise. resolve are asynchronous actions Which mean that the inner console.log statements will be evaluated after some delay 
-// the difference is that Promise. resolve schedules the microtask and setTimeout schedule the microtask. Microtask has higher priority than a macro task, thus Promise. resolve will be evaluated faster and the first output will be 2
-
 
 
 
@@ -16,9 +9,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navber from './components/Navber';
 import Sideber from './components/Sideber';
 import { useStateContext } from "./context/ContextProvider";
+import Calender from './pages/Calender';
 import CatagorisList from './pages/CatagorisList';
 import Ecommerce from './pages/Ecommerce';
 import ProductList from './pages/ProductList';
+
 
 
 
@@ -69,7 +64,7 @@ const App = () => {
                 : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
             }
           >
-            <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
+            <div className=" sticky top-0 z-30 px-2 py-4 sm:px-4  bg-main-bg dark:bg-main-dark-bg navbar w-full ">
               <Navber />
               
             </div>
@@ -79,10 +74,12 @@ const App = () => {
                 <Route path='/ecommerce' element={(<Ecommerce />)} />
                 {/* catagories  */}
                 <Route path='/Products_List' element={(<ProductList />)} />
-                {/* catagories  */}
+             
                 <Route path='/Catagoris_List' element={(<CatagorisList />)} />
+                {/* calender   */}
+                <Route path='/calendar' element={(<Calender />)} />
               
-                ca
+                
               </Routes>
             
 
