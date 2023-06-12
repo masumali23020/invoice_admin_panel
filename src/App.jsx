@@ -12,6 +12,7 @@ import { useStateContext } from "./context/ContextProvider";
 import Calender from './pages/Calender';
 import CatagorisList from './pages/CatagorisList';
 import Ecommerce from './pages/Ecommerce';
+import EditeProduct from './pages/EditeProduct';
 import ProductList from './pages/ProductList';
 
 
@@ -73,7 +74,12 @@ const App = () => {
                 <Route path='/' element={(<Ecommerce />)} />
                 <Route path='/ecommerce' element={(<Ecommerce />)} />
                 {/* catagories  */}
+
+                {/* product  */}
                 <Route path='/Products_List' element={(<ProductList />)} />
+                <Route path='/product/edit' element={(< EditeProduct />)} />
+                <Route path='/product/edit/:_id' element={(< EditeProduct />)} />
+
              
                 <Route path='/Catagoris_List' element={(<CatagorisList />)} />
                 {/* calender   */}

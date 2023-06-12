@@ -1,8 +1,14 @@
-import React from 'react'
-import { AiOutlineFileSearch, AiOutlineSearch } from 'react-icons/ai'
-import ListOfProducts from '../components/productList/ListOfProducts'
+import React from 'react';
+import { AiOutlineFileSearch, AiOutlineSearch } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import ListOfProducts from '../components/productList/ListOfProducts';
+// import { useGetProductsQuery } from '../feature/products/productsApi';
 
 const ProductList = () => {
+
+
+    
+
   return (
     
     <div className='  h-full w-full'>
@@ -13,7 +19,9 @@ const ProductList = () => {
             <h1 className=' text-3xl font-medium'>Products</h1>
             <div className=' flex justify-evenly gap-4 '>
                 <button className='uppercase bg-slate-400 hover:bg-slate-200 p-3 rounded-md text-white  duration-150 hover:text-black'>Import</button>
+                <Link to="/product/edit" >
                 <button className='uppercase bg-slate-400 hover:bg-slate-300 p-3 rounded-md text-white hover:text-black duration-150'>New Products</button>
+                </Link>
                 
                 
             </div>
@@ -31,48 +39,8 @@ const ProductList = () => {
         </div>
 
         {/* product list  */}
-        <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-            <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
-                        <th scope="col" className="p-4">
-                            <div className="flex items-center">
-                                <input id="checkbox-all-search" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                                <label htmlFor="checkbox-all-search" className="sr-only">checkbox</label>
-                            </div>
-                        </th>
-                        <th scope="col" className="px-6 font-medium text-[20px] py-3">
-                            Product name
-                        </th>
-                    
-                        <th scope="col" className="px-6 font-medium text-[20px] py-3">
-                            Category
-                        </th>
-                        
-                        <th scope="col" className="px-6 font-medium text-[20px] py-3">
-                            Stock
-                        </th>
-                        <th scope="col" className="px-6 font-medium text-[20px] py-3">
-                            Price
-                        </th>
-                    
-                        <th scope="col" className="px-6 font-medium text-[20px] py-3">
-                            Action
-                        </th>
-                    </tr>
-                </thead>
-               <ListOfProducts />
-               <ListOfProducts />
-               <ListOfProducts />
-               <ListOfProducts />
-               <ListOfProducts />
-            
-                  
-                
-                    
-               
-            </table>
-        </div>
+        <ListOfProducts />
+       
 
 
         {/* pajination  */}
