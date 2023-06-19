@@ -31,7 +31,7 @@ export const links = [
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: 'Product',
+        name: 'Invoice',
         icon: <AiOutlinePlus />,
       },
       {

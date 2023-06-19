@@ -9,8 +9,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navber from './components/Navber';
 import Sideber from './components/Sideber';
 import { useStateContext } from "./context/ContextProvider";
+import AddProduct from './pages/AddProducts';
 import Calender from './pages/Calender';
 import CatagorisList from './pages/CatagorisList';
+import CreateInvoice from './pages/CreateInvoice';
 import Ecommerce from './pages/Ecommerce';
 import EditeProduct from './pages/EditeProduct';
 import ProductList from './pages/ProductList';
@@ -73,12 +75,16 @@ const App = () => {
               <Routes>
                 <Route path='/' element={(<Ecommerce />)} />
                 <Route path='/ecommerce' element={(<Ecommerce />)} />
+                <Route path='/invoice' element={( <CreateInvoice />)} />
                 {/* catagories  */}
+
+              
 
                 {/* product  */}
                 <Route path='/Products_List' element={(<ProductList />)} />
-                <Route path='/product/edit' element={(< EditeProduct />)} />
-                <Route path='/product/edit/:_id' element={(< EditeProduct />)} />
+                <Route path='/product/add' element={(< AddProduct />)} />
+                <Route path='/product/edit/:productId' element={(< EditeProduct />)} />
+                <Route path='/kanban' element={(< CreateInvoice />)} />
 
              
                 <Route path='/Catagoris_List' element={(<CatagorisList />)} />

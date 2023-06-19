@@ -19,8 +19,8 @@ const ProductList = () => {
             <h1 className=' text-3xl font-medium'>Products</h1>
             <div className=' flex justify-evenly gap-4 '>
                 <button className='uppercase bg-slate-400 hover:bg-slate-200 p-3 rounded-md text-white  duration-150 hover:text-black'>Import</button>
-                <Link to="/product/edit" >
-                <button className='uppercase bg-slate-400 hover:bg-slate-300 p-3 rounded-md text-white hover:text-black duration-150'>New Products</button>
+                <Link to="/product/add" >
+                <button className='uppercase bg-slate-400 hover:bg-slate-300 p-3 rounded-md text-white hover:text-black duration-150'>Add Products</button>
                 </Link>
                 
                 
