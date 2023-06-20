@@ -15,6 +15,7 @@ import CatagorisList from './pages/CatagorisList';
 import CreateInvoice from './pages/CreateInvoice';
 import Ecommerce from './pages/Ecommerce';
 import EditeProduct from './pages/EditeProduct';
+import Invoices from './pages/Invoice';
 import ProductList from './pages/ProductList';
 
 
@@ -75,16 +76,19 @@ const App = () => {
               <Routes>
                 <Route path='/' element={(<Ecommerce />)} />
                 <Route path='/ecommerce' element={(<Ecommerce />)} />
-                <Route path='/invoice' element={( <CreateInvoice />)} />
+              
                 {/* catagories  */}
 
+                {/* invoice  Add_Invoice */}
+                <Route path='/Add_Invoice' element={( <CreateInvoice />)} />
+                <Route path='/invoice' element={( <Invoices />)} />
               
 
                 {/* product  */}
                 <Route path='/Products_List' element={(<ProductList />)} />
                 <Route path='/product/add' element={(< AddProduct />)} />
                 <Route path='/product/edit/:productId' element={(< EditeProduct />)} />
-                <Route path='/kanban' element={(< CreateInvoice />)} />
+              
 
              
                 <Route path='/Catagoris_List' element={(<CatagorisList />)} />
@@ -109,5 +113,6 @@ const App = () => {
     </div>
   )
 }
+
 
 export default App

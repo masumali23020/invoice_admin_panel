@@ -30,10 +30,10 @@ export const links = [
         name: 'Products_List',
         icon: <AiOutlineShoppingCart />,
       },
-      {
-        name: 'Invoice',
-        icon: <AiOutlinePlus />,
-      },
+      // {
+      //   name: 'Invoice',
+      //   icon: <AiOutlinePlus />,
+      // },
       {
         name: 'Catagoris_List',
         icon: <IoMdContacts />,
@@ -41,6 +41,19 @@ export const links = [
       {
         name: 'Catagoris',
         icon: <RiContactsLine />,
+      },
+    ],
+  },
+  {
+    title: 'Ivoice',
+    links: [
+      {
+        name: 'Add_Invoice',
+        icon: <AiOutlinePlus />,
+      },  
+       {
+        name: 'Invoice',
+        icon: <FiShoppingBag />,
       },
     ],
   },

@@ -1,12 +1,21 @@
 import React from 'react'
+import { AiOutlinePrinter } from 'react-icons/ai'
 import CustomerInformation from '../components/invoice/CustomerInformation'
 import Table from '../components/invoice/Table'
 import TotalAmount from '../components/invoice/TotalAmount'
 
 const CreateInvoice = () => {
+
+  const hadelPrnted = () => {
+    window.print()
+  }
   return (
     <form className='container mx-auto    p-10' >
         <div className=''>
+        <div className='ml-6 cursor-pointer bg-slate-300 hover:bg-slate-400 transform duration-200 ease-in   w-20  rounded-md px-4 py-2' onClick={hadelPrnted}>
+         <AiOutlinePrinter size={30} className='text-center mx-auto '  />
+        
+         </div>
             <div className=' uppercase text-center text-3xl p-6'>
                 <h1>invoice Create</h1>
             </div>
