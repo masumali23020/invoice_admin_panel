@@ -7,6 +7,7 @@ const CustomerInformation = () => {
         <h1 className='text-3xl uppercase font-medium'>bill to </h1>
         <input className='bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500'   type="text" placeholder='customer name' />
         <input className='bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500'    type="number" placeholder='015********' />
+        <input className='bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500'    type="email" placeholder='masum0218@gmail.com' />
         <input className='bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500'    type="text" placeholder='Adress' />
         
     </div>
