@@ -8,6 +8,7 @@ import { FiSettings } from 'react-icons/fi';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navber from './components/Navber';
 import Sideber from './components/Sideber';
+import EditeCustomer from './components/customer/EditeCustomer';
 import { useStateContext } from "./context/ContextProvider";
 import AddProduct from './pages/AddProducts';
 import Calender from './pages/Calender';
@@ -82,6 +83,9 @@ const App = () => {
                 {/* invoice  Add_Invoice */}
                 <Route path='/Add_Invoice' element={( <CreateInvoice />)} />
                 <Route path='/invoice' element={( <Invoices />)} />
+
+                {/* customer list details  */}
+                <Route path='/customer/edit/:customerId' element={( <EditeCustomer />)} />
               
 
                 {/* product  */}
